@@ -1,0 +1,146 @@
+.video-about-container {
+    width: 70%;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.main-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    color: #333;
+    text-align: center;
+}
+
+.video-about-container h2 {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+.about-section {
+    margin: 40px 0;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out, transform 0.3s ease-in-out;
+    transform: translateX(100%);
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.about-section.animate-left {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.about-section.animate-right {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.about-section:hover {
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+    transform: scale(1.02);
+}
+
+.section-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.left-content {
+    flex: 1;
+    padding-right: 20px;
+    font-weight: 600;
+}
+
+.right-content {
+    flex: 1;
+    padding-left: 20px;
+    font-weight: 600;
+}
+
+iframe {
+    width: 100%;
+    max-width: 700px;
+    height: 315px;
+    border-radius: 8px;
+}
+
+@keyframes slideLeft {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideRight {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+.animate-left {
+    animation: slideLeft 1s ease-out forwards;
+}
+
+.animate-right {
+    animation: slideRight 1s ease-out forwards;
+}
+
+.section-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: #444;
+    line-height: 1.8;
+}
+
+.section-text strong {
+    font-weight: 900;
+    color: #222;
+}
+
+@media (max-width: 768px) {
+    .section-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-content,
+    .right-content {
+        width: 100%;
+        flex: none;
+        padding: 10px;
+        margin: 10px 0;
+    }
+
+    .left-content iframe {
+        max-width: 100%;
+    }
+
+    .right-content {
+        text-align: center;
+    }
+
+    .video-about-container {
+        width: 90%;
+    }
+
+    .main-title {
+        font-size: 28px;
+    }
+
+    .section-text {
+        font-size: 16px;
+    }
+}

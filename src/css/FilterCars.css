@@ -1,0 +1,95 @@
+.filter-container {
+    width: 75%;
+    margin: 70px auto 50px;
+    background-color: #28584e;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.6);
+}
+
+.filter-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.filter-item {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.filter-item option {
+    font-family: "Trade Winds", serif;
+}
+
+#doors,
+#fuel,
+#year-to,
+#year-from,
+#price,
+#model,
+#brand {
+    font-family: "Trade Winds", serif;
+}
+
+
+
+.filter-item select,
+.filter-item input {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.filter-item input[type="number"]::placeholder {
+    text-align: right;
+}
+
+.search-btn {
+    display: block;
+    width: 30%;
+    padding: 12px;
+    background-color: #0a0a0a;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 20px auto;
+    font-family: "Trade Winds", serif;
+
+}
+
+.search-btn:hover {
+    background-color: #242222;
+}
+
+@media (max-width: 768px) {
+
+
+
+    .filter-container {
+        width: 95%;
+        margin: 30px auto;
+        padding: 15px;
+
+
+    }
+
+    .filter-row {
+        display: block;
+    }
+
+    .filter-item {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .search-btn {
+        width: 100%;
+    }
+}

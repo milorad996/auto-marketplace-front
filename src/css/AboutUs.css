@@ -1,0 +1,236 @@
+.main-content {
+    background-color: #f7f7f7;
+    margin-top: 0;
+}
+
+.about-us-hero {
+    width: 100%;
+    height: 70vh;
+    background-image: url("aboutUs.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.hero-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(40, 88, 78, 0.8);
+    backdrop-filter: blur(6px);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 8%;
+}
+
+.hero-content {
+    text-align: left;
+    max-width: 550px;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 4px 4px 12px rgba(0, 0, 0, 0.6);
+    font-family: 'Poppins', sans-serif;
+    white-space: nowrap;
+    transition: transform 0.3s ease-in-out;
+}
+
+.hero-content h1:hover {
+    transform: scale(1.05);
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin: 15px 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.hero-button {
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    color: white;
+    background: linear-gradient(135deg, #28584e, #3b7a6a);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.hero-button:hover {
+    background: linear-gradient(135deg, #1f453d, #28584e);
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.about-us-info {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #f7f7f7;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeUp 1s ease-in-out forwards;
+}
+
+.info-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    color: #28584e;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.info-title::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: #28584e;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+.info-text {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    color: #555;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+}
+
+.offer-section {
+    margin-top: 50px;
+    background-color: #f7f7f7;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.offer-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    color: #28584e;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 60px;
+}
+
+.offer-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.offer-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 15px;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.offer-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.offer-box {
+    width: 100px;
+    height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 15px;
+}
+
+.sell {
+    background-image: url('sell.png');
+}
+
+.buy {
+    background-image: url('buy.png');
+}
+
+.filter {
+    background-image: url('filter.png');
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.2rem;
+        white-space: normal;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .hero-button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    .info-title {
+        font-size: 2rem;
+    }
+
+    .info-text {
+        font-size: 1rem;
+    }
+
+    .offer-container {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 30px;
+    }
+
+    .offer-item {
+        width: 80%;
+    }
+
+    .offer-box {
+        height: 80px;
+    }
+}

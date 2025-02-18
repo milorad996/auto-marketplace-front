@@ -1,0 +1,90 @@
+.custom-navbar {
+    background-color: #28584e !important;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.auto-market {
+    color: #fffbf8;
+    padding: 10px 20px;
+    font-family: 'Trade Winds', serif;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.home-link,
+.sell-link,
+.about-link {
+    font-weight: 600;
+    font-size: 16px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.home-link:hover,
+.sell-link:hover,
+.about-link:hover {
+    color: #ff7f50;
+    transition: color 0.3s;
+}
+
+.custom-nav-dropdown .dropdown-toggle {
+    color: white;
+}
+
+.custom-nav-dropdown .custom-dropdown-item {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.custom-nav-dropdown .custom-dropdown-item:hover {
+    background-color: #28584e;
+    color: white;
+}
+
+.custom-logout-button {
+    color: #28584e;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+}
+
+.custom-logout-button {
+    opacity: 1;
+    visibility: visible;
+    color: white;
+}
+
+.custom-logout-button:hover {
+    background-color: #28584e;
+    color: #ff7f50;
+}
+
+
+@media (max-width: 991px) {
+    .auto-market {
+        font-size: 22px;
+    }
+
+    .home-link,
+    .sell-link,
+    .about-link {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .auto-market {
+        font-size: 18px;
+    }
+
+    .home-link,
+    .sell-link,
+    .about-link {
+        font-size: 12px;
+    }
+}

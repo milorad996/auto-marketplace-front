@@ -1,0 +1,224 @@
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    gap: 30px;
+}
+
+.register-info {
+    width: 35%;
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.register-info h2 {
+    margin-bottom: 15px;
+    font-size: 24px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+}
+
+.register-info p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.register-form {
+    width: 65%;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.register-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: #28584e;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 15px 15px 15px 45px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    transition: all 0.3s ease;
+}
+
+.input-group input:focus {
+    border-color: #28584e;
+    box-shadow: 0 0 8px rgba(40, 88, 78, 0.6);
+}
+
+.input-group .input-icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #28584e;
+    font-size: 18px;
+}
+
+@media (max-width: 600px) {
+    .input-group input {
+        padding: 12px 12px 12px 40px;
+        font-size: 14px;
+    }
+
+    .input-group .input-icon {
+        font-size: 16px;
+        left: 10px;
+    }
+}
+
+
+.terms {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.terms input {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.terms label {
+    font-size: 14px;
+    color: #777;
+    cursor: pointer;
+}
+
+.error-msg {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.register-form button {
+    width: 100%;
+    padding: 12px 0;
+    background-color: #28584e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    margin-top: 15px;
+}
+
+.register-form button:hover {
+    background-color: #1e4b41;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 900px) {
+    .register-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .register-info,
+    .register-form {
+        width: 90%;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .register-info h2,
+    .register-form h2 {
+        font-size: 20px;
+    }
+
+    .register-info p {
+        font-size: 14px;
+    }
+
+    .register-form input {
+        padding: 12px;
+    }
+
+    .register-form button {
+        width: 100%;
+    }
+
+    .terms {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .register-container {
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        flex-direction: column;
+    }
+
+    .register-info,
+    .register-form {
+        width: 100%;
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .register-info h2,
+    .register-form h2 {
+        font-size: 18px;
+    }
+
+    .register-info p,
+    .register-form input {
+        font-size: 14px;
+    }
+
+    .input-group input {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .register-form button {
+        width: 100%;
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .terms {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .terms input {
+        width: 18px;
+        height: 18px;
+    }
+
+    .terms label {
+        font-size: 12px;
+    }
+}
