@@ -1,15 +1,16 @@
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { addCar, clearCarErrors } from "../store/cars/slice";
-import { selectBrands, selectCarErrors } from "../store/cars/selectors";
+import { addCar, clearCarErrors, clearCarSuccess } from "../store/cars/slice";
+import { selectBrands, selectCarErrors, selectSuccessfullyCreatedCar } from "../store/cars/selectors";
 import './../css/SellCarPage.css';
+import { useNavigate } from "react-router-dom";
 
 function SellCarPage() {
     const dispatch = useDispatch();
     const brands = useSelector(selectBrands);
     const carErrors = useSelector(selectCarErrors);
-
-
+    const successfullyCreatedCar = useSelector(selectSuccessfullyCreatedCar);
+    const navigate = useNavigate();
 
 
     const [formData, setFormData] = useState({
@@ -26,8 +27,16 @@ function SellCarPage() {
     });
 
     useEffect(() => {
+        dispatch(clearCarSuccess());
         dispatch(clearCarErrors());
     }, [dispatch]);
+
+    useEffect(() => {
+        if (successfullyCreatedCar === "Car and model created successfully!") {
+            navigate('/');
+            dispatch(clearCarSuccess());
+        }
+    }, [navigate, successfullyCreatedCar, dispatch]);
 
     const handleChange = (e) => {
         const { name, value } = e.target;

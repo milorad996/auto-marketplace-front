@@ -92,9 +92,11 @@ class CarService extends HttpService {
             throw error;
         }
     };
-    delete = async (carId) => {
-        const { data } = await this.client.delete(`cars/${carId}`);
-        return data;
+    deleteCar = async (carId) => {
+        const response = await this.client.post(`/cars/${carId}/delete`, {
+            _method: 'DELETE'
+        });
+        return response.data;
     };
 
 

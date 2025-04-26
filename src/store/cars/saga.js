@@ -20,7 +20,6 @@ import {
     setSimilarCars,
     deleteCar,
     deleteCarSuccess,
-
 } from "./slice";
 
 
@@ -29,6 +28,7 @@ function* getCarsHandler({ payload }) {
 
     try {
         const cars = yield call(carService.getAll, payload?.page);
+
         if (payload?.page > 1) {
             yield put(appendCars(cars));
         } else {
@@ -68,8 +68,6 @@ function* getFilteredCarsHandler({ payload }) {
 }
 
 function* addCarHandler({ payload }) {
-
-
     try {
         const data = yield call(carService.addCar, payload);
         yield put(setSuccessfullyCreatedCar(data?.message));
@@ -84,16 +82,13 @@ function* addCarHandler({ payload }) {
 }
 
 function* getSingleCarHandler({ payload }) {
-
     try {
         const data = yield call(carService.getCar, payload);
-
         yield put(setCar(data));
     } catch (e) {
         console.log(e);
     }
 }
-
 function* getSimilarCarsHandler({ payload }) {
     try {
         const data = yield call(carService.getSimilarCars, payload.brand, payload.carId);
@@ -102,10 +97,9 @@ function* getSimilarCarsHandler({ payload }) {
         console.log(e);
     }
 }
-
 function* deleteCarHandler({ payload }) {
     try {
-        yield call(carService.delete, payload);
+        yield call(carService.deleteCar, payload);
 
         yield put(deleteCarSuccess(payload));
 
@@ -119,11 +113,9 @@ function* deleteCarHandler({ payload }) {
 export function* watchGetCars() {
     yield takeLatest(getCars.type, getCarsHandler);
 }
-
 export function* watchGetBrands() {
     yield takeLatest(getBrands.type, getBrandsHandler);
 }
-
 export function* watchGetModelsByBrand() {
     yield takeLatest(getModelsByBrand.type, getModelsByBrandHandler);
 }

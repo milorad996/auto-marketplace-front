@@ -24,10 +24,7 @@ class AuthService extends HttpService {
     logout = async () => {
         await this.client.post("/logout");
     };
-    refresh = async () => {
-        const { data } = await this.client.post("/refresh");
-        return data;
-    };
+    
 }
 
 const authService = new AuthService();

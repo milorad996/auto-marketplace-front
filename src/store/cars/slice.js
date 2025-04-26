@@ -76,6 +76,9 @@ const carsSlice = createSlice({
         clearCarErrors(state) {
             state.carErrors = null;
         },
+        clearCarSuccess(state) {
+            state.successfullyCreatedCar = "";
+        },
         deleteCarSuccess(state, { payload }) {
 
             if (state.page.data) {
@@ -110,6 +113,7 @@ export const {
     clearCarErrors,
     deleteCar,
     deleteCarSuccess,
+    clearCarSuccess,
 
 } = carsSlice.actions;
 

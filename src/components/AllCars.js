@@ -12,6 +12,8 @@ function AllCars() {
     const cars = useSelector(selectCars);
     const navigate = useNavigate();
 
+    console.log("all cars in all cars", cars);
+
     useEffect(() => {
         dispatch(getCars({ page: 1 }));
     }, [dispatch]);

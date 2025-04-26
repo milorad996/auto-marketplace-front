@@ -20,3 +20,6 @@ export function selectSingleCar(state) {
 export function selectSimilarCars(state) {
     return state.cars.similarCars;
 }
+export function selectSuccessfullyCreatedCar(state) {
+    return state.cars.successfullyCreatedCar;
+}

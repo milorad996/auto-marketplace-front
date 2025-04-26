@@ -3,7 +3,7 @@ import axios from "axios";
 export default class HttpService {
     constructor() {
         this.client = axios.create({
-            baseURL: "http://localhost:8000/api"
+            baseURL: "https://auto-marketplace-back-production.up.railway.app/api"
 
         });
         this.client.interceptors.request.use(function (config) {

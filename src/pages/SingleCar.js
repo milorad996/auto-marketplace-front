@@ -94,7 +94,6 @@ function SingleCar() {
                         </div>
                     )}
 
-                    {/* DELETE BUTTON */}
                     {isAuthenticated && activeUser?.id === car.user_id && (
                         <button className="delete-car-button" onClick={handleDeleteCar}>
                             Delete Car
