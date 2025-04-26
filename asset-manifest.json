@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/auto-marketplace-front/static/css/main.087e15c8.css",
+    "main.js": "/auto-marketplace-front/static/js/main.69790f1b.js",
+    "static/js/453.87272a2f.chunk.js": "/auto-marketplace-front/static/js/453.87272a2f.chunk.js",
+    "static/media/ad1.png": "/auto-marketplace-front/static/media/ad1.514ca756f36d8d98337d.png",
+    "static/media/aboutUs.jpg": "/auto-marketplace-front/static/media/aboutUs.d3ba4fc96e9950e798c0.jpg",
+    "static/media/ad5.png": "/auto-marketplace-front/static/media/ad5.fd4670dfefa3aa8611c9.png",
+    "static/media/car.jpg": "/auto-marketplace-front/static/media/car.175dc953664cab6f7672.jpg",
+    "static/media/forSale2.png": "/auto-marketplace-front/static/media/forSale2.803029b318404dde24d7.png",
+    "static/media/ad4.png": "/auto-marketplace-front/static/media/ad4.de934dbf54a4e5767cf5.png",
+    "static/media/sell.png": "/auto-marketplace-front/static/media/sell.d149e2fcec76590d08f6.png",
+    "static/media/buy.png": "/auto-marketplace-front/static/media/buy.8c605fb367fb76b4bd37.png",
+    "static/media/filter.png": "/auto-marketplace-front/static/media/filter.bccf3cc720b990f565ef.png",
+    "index.html": "/auto-marketplace-front/index.html",
+    "main.087e15c8.css.map": "/auto-marketplace-front/static/css/main.087e15c8.css.map",
+    "main.69790f1b.js.map": "/auto-marketplace-front/static/js/main.69790f1b.js.map",
+    "453.87272a2f.chunk.js.map": "/auto-marketplace-front/static/js/453.87272a2f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.087e15c8.css",
+    "static/js/main.69790f1b.js"
+  ]
+}
