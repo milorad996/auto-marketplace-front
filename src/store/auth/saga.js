@@ -30,7 +30,7 @@ function* handleRegister({ payload }) {
 function* handleLogin({ payload }) {
     try {
         const data = yield call(authService.login, payload);
-        localStorage.setItem("token", data.authorization.token);
+        sessionStorage.setItem("token", data.authorization.token);
         yield put(setActiveUser(data.user));
         yield put(successfulLogin(data.message));
         yield put(setToken(data.authorization.token));
@@ -48,7 +48,7 @@ function* handleLogin({ payload }) {
 function* handleLogout({ payload }) {
     try {
         yield call(authService.logout);
-        localStorage.removeItem("token");
+        sessionStorage.removeItem("token");
         if (typeof payload.meta?.onSuccessLogout === "function") {
             yield call(payload.meta.onSuccessLogout);
         }

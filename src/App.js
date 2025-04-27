@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import NavbarComponent from './components/Navbar';
 import HomeCars from './pages/HomeCars';
@@ -13,25 +13,23 @@ import SingleCar from './pages/SingleCar';
 
 function App() {
   return (
-    <Router>
-      <div className="App">
-        <NavbarComponent />
+    <div className="App">
+      <NavbarComponent />
 
-        <div className="main-content">
-          <Routes>
-            <Route exact path="/" element={<HomeCars />} />
-            <Route exact path="/register" element={<Register />} />
-            <Route exact path="/login" element={<Login />} />
-            <Route exact path='/filtered-cars' element={<FilteredCars />} />
-            <Route exact path='/sell' element={<SellCarPage />} />
-            <Route exact path='/about' element={<AboutUs />} />
-            <Route exact path='/single-car/:id' element={<SingleCar />} />
-          </Routes>
-        </div>
-
-        <Footer />
+      <div className="main-content">
+        <Routes>
+          <Route exact path="/" element={<HomeCars />} />
+          <Route exact path="/register" element={<Register />} />
+          <Route exact path="/login" element={<Login />} />
+          <Route exact path='/filtered-cars' element={<FilteredCars />} />
+          <Route exact path='/sell' element={<SellCarPage />} />
+          <Route exact path='/about' element={<AboutUs />} />
+          <Route exact path='/single-car/:id' element={<SingleCar />} />
+        </Routes>
       </div>
-    </Router>
+
+      <Footer />
+    </div>
   )
 }
 

@@ -9,7 +9,7 @@ const middlewareActions = {
 const authSlice = createSlice({
     name: "auth",
     initialState: {
-        token: localStorage.getItem("token"),
+        token: sessionStorage.getItem("token"),
         user: [],
         registerErrors: null,
         successfullyCreatedUser: "",
@@ -22,7 +22,7 @@ const authSlice = createSlice({
         },
         setToken(state, { payload }) {
             state.token = payload;
-            localStorage.setItem("token", payload);
+            sessionStorage.setItem("token", payload);
         },
         setRegisterErrors: (state, { payload }) => {
             state.registerErrors = payload;
