@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/auto-marketplace-front/static/css/main.a3382cb0.css",
+    "main.css": "/auto-marketplace-front/static/css/main.8669079a.css",
     "main.js": "/auto-marketplace-front/static/js/main.b81e3e39.js",
     "static/js/453.87272a2f.chunk.js": "/auto-marketplace-front/static/js/453.87272a2f.chunk.js",
     "static/media/ad1.png": "/auto-marketplace-front/static/media/ad1.514ca756f36d8d98337d.png",
@@ -13,12 +13,12 @@
     "static/media/buy.png": "/auto-marketplace-front/static/media/buy.8c605fb367fb76b4bd37.png",
     "static/media/filter.png": "/auto-marketplace-front/static/media/filter.bccf3cc720b990f565ef.png",
     "index.html": "/auto-marketplace-front/index.html",
-    "main.a3382cb0.css.map": "/auto-marketplace-front/static/css/main.a3382cb0.css.map",
+    "main.8669079a.css.map": "/auto-marketplace-front/static/css/main.8669079a.css.map",
     "main.b81e3e39.js.map": "/auto-marketplace-front/static/js/main.b81e3e39.js.map",
     "453.87272a2f.chunk.js.map": "/auto-marketplace-front/static/js/453.87272a2f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a3382cb0.css",
+    "static/css/main.8669079a.css",
     "static/js/main.b81e3e39.js"
   ]
 }
