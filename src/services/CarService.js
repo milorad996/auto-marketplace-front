@@ -71,8 +71,6 @@ class CarService extends HttpService {
             }
 
             const { data } = await this.client.get(url);
-
-            console.log("get filtered in service data", data);
             return data;
         } catch (error) {
             console.error("Error fetching filtered cars:", error);

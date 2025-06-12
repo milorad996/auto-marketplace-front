@@ -47,7 +47,7 @@ body {
     text-align: left;
     text-transform: uppercase;
     padding: 20px;
-    font-size: 26px;
+    font-size: 2rem;
     font-weight: 800;
     letter-spacing: 3px;
     animation: fadeInUp 1s forwards;
@@ -115,6 +115,8 @@ body {
     .welcome-message h3 {
         font-size: 32px;
     }
+
+
 }
 
 

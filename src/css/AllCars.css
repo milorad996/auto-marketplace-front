@@ -54,6 +54,10 @@
     color: #28584e;
 }
 
+.card-body {
+    overflow-y: hidden;
+}
+
 .car-mileage {
     font-size: 16px;
     color: gray;
